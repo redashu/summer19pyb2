@@ -1,0 +1,7 @@
+---
+ - hosts: localhost          #  this is target  section 
+   tasks:
+    - name: running   whoami  command  
+      command: whoami
+    - name:  installing   httpd  software 
+      yum: name=httpd  state=installed  

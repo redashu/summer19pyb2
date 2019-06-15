@@ -1,0 +1,11 @@
+---
+ - hosts: localhost          #  this is target  section 
+   tasks:
+    - name:  installing   httpd  software 
+      yum:
+       name: httpd
+       state: present
+
+    - name:  printing   message  
+      debug:
+       msg="Hello world  this is Ansible  "
